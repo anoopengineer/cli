@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gocommons/cli/command"
+	"github.com/gocommons/cli/commands"
 	"github.com/gocommons/cli/runtime"
 )
 
@@ -42,7 +42,7 @@ func Run(args []string, conf runtime.Config) error {
 	}
 	defer term.TearDown()
 
-	initializeDefaultCommands([]runtime.Command{&command.Version{}, &command.Quit{}, &command.Help{}})
+	initializeDefaultCommands([]runtime.Command{&commands.Version{}, &commands.Quit{}, &commands.Help{}})
 
 	commandArgs, subCommand, subcommandArgs := parseCommands(os.Args)
 	runtime := runtime.GetDefaultRuntime(term, os.Args, commandArgs, conf, map[string]interface{}{})
