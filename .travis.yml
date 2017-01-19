@@ -1,0 +1,19 @@
+language: go
+sudo: false
+
+env:
+  global:
+  - GO15VENDOREXPERIMENT='1'
+
+branches:
+  only:
+    - master
+
+go:
+ - 1.7.4
+
+os:
+ - linux
+
+script:
+ - make
