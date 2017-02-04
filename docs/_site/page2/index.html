@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Go library to implement simple to complex command line applications with multiple subcommand support, REPL terminal, multiple colors, theme support etc">
+    <meta name="author" content="Anoop Kunjuraman">
+
+    <title>GoCommons CLI - An advanced Golang library to implement command line apps with multiple subcommand support and built in REPL terminal</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
+
+    <!-- Custom CSS
+    <link rel="stylesheet" href="css/main.css" type="text/css"> -->
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/"><i class="fa fa-2x fa-terminal wow bounceIn black" data-wow-delay=".3s"></i> GoCommons CLI</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/">HOME</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/docs/">GETTING STARTED</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">HELP</a>
+                </li>
+                <li>
+                    <a href="https://github.com/gocommons/cli" target="_blank">VIEW ON GITHUB</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1>A Golang library to implement simple to complex command line applications with multiple subcommand support and built in REPL terminal</h1>
+                        <a href="https://github.com/gocommons/cli" target="_blank" class="btn btn-outline btn-xl page-scroll">VIEW ON GITHUB</a>
+                        <a href="/docs/" class="btn btn-outline btn-xl page-scroll" style="margin-left:30px;">Getting Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <img src="/img/sample.gif" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+      <section id="features" class="features">
+        <div class="container">
+            <div class="row feature-row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>GoCommons CLI Features</h2>
+                        <p class="text-muted">Let's see why GoCommon CLI is better than other CLI libraries&hellip;</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-row">
+                <div class="col-md-12">
+                    <h3>Great subcommand support</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-muted">Ever seen applications like git which supports multiple subcommands like git clone and git push? Well, now you can build you own myawesomeapp supporting multiple subcommands foo and bar effortlessly using this library</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/sample.gif" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-row">
+                <div class="col-md-12">
+                    <h3>Full blown REPL terminal built in</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-muted">Run your app without providing a subcommand and you get a builtin internal REPL terminal with full history, configurable prompt, keyboard shortcuts and autocompletion</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/sample.gif" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-row">
+                <div class="col-md-12">
+                    <h3>Complete bash shortcuts supported in the REPL terminal</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-muted">All the keyboard shortcuts that you are familiar with - up and down arrows, Ctrl-p, Ctrl-n to navigate between history, Ctrl-a, Ctrl-e and other text navigation shortcuts work out of the box</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/sample.gif" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-row">
+                <div class="col-md-12">
+                    <h3>Supports colors in terminal</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-muted">Build command line applications that supports displaying text in multiple colors, bold, italics, blinking with the colors package</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/sample.gif" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-row">
+                <div class="col-md-12">
+                    <h3>Supports custom themes</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-muted">Don't like the default colors? Create your own with Themes package</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/sample.gif" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+  <section id="why" class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-danger">Marketing fluff</h2>
+                <p class="highlights-subtext">Because every website needs to have pretty font-awesome icons and some text underneath them</p>
+                <hr class="primary">
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-diamond wow bounceIn text-danger"></i>
+                    <h3 class="text-danger">Great Code Coverage</h3>
+                    <p class="highlights-subtext">Large number of unit tests with great code coverage should provide your manager peace of mind</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-danger" data-wow-delay=".1s"></i>
+                    <h3 class="text-danger">Easy to code and ship</h3>
+                    <p class="highlights-subtext">Create one struct per subcommand and implement the Run() method. easy peasy.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-users wow bounceIn text-danger" data-wow-delay=".2s"></i>
+                    <h3 class="text-danger">Easy to get help</h3>
+                    <p class="highlights-subtext">We are available via email, twitter and slack.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart wow bounceIn text-danger" data-wow-delay=".3s"></i>
+                    <h3 class="text-danger">Made with Love</h3>
+                    <p class="highlights-subtext">Because it is mandatory to include 'Made with Love'</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-cogs wow bounceIn text-danger"></i>
+                    <h3 class="text-danger">Continous Integration</h3>
+                    <p class="highlights-subtext">Every git push and every pull request goes though go vet, go fmt and go test checks before getting merged to master</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-puzzle-piece wow bounceIn text-danger" data-wow-delay=".1s"></i>
+                    <h3 class="text-danger">Extensibility</h3>
+                    <p class="highlights-subtext">All modules are written as Interfaces. If you dont like the current implementation, create your own.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-paint-brush wow bounceIn text-danger" data-wow-delay=".2s"></i>
+                    <h3 class="text-danger">Higly Themeable</h3>
+                    <p class="highlights-subtext">Don't like the default look and feel? Change it via the themes package.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-copyright wow bounceIn text-danger" data-wow-delay=".3s"></i>
+                    <h3 class="text-danger">Permissive License</h3>
+                    <p class="highlights-subtext">MIT License. Go wild.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <section id="what-next" class="what-next">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-danger">Interested to know more?</h2>
+                <hr class="primary">
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <p> Start with the <a href="/docs/">Getting started</a> guide </p>
+        <p> Then take a look at the demo application<a href="https://github.com/anoopengineer/gocommons-cli-demo">Demo Application</a></p>
+        <p> Godoc available at <a href="https://godoc.org/github.com/gocommons/cli">https://godoc.org/github.com/gocommons/cli</a>
+    </div>
+</section>
+  
+<footer>
+    <div class="container">
+        <p>&copy; 2016 theme by <a rel="nofollow" target="blank" href="https://startbootstrap.com/template-overviews/new-age/">Start Bootstrap</a> Built with <a target="_blank" rel="nofollow" href="https://jekyllrb.com/">Jekyll</a> by <a target="_blank" rel="nofollow" href="https://it.linkedin.com/in/antoniotrento">Antonio Trento</a> hosted on <a target="_blank" rel="nofollow" href="https://github.com/jekynewage/jekynewage.github.io">Github</a>. All Rights Reserved.</p>
+    </div>
+</footer>
+
+  <!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript
+<script src="js/bootstrap.min.js"></script> -->
+
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.fittext.js"></script>
+<script src="/js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/creative.js"></script>
+
+<!-- jQuery
+<script src="/vendor/jquery/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="/js/new-age.min.js"></script>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-86331249-1']);
+          _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+
+</html>

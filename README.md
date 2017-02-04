@@ -1,3 +1,5 @@
-# GoCommons CLI [![Build Status](https://travis-ci.org/gocommons/cli.svg?branch=master)](https://travis-ci.org/gocommons/cli) [![GoDoc](https://godoc.org/github.com/gocommons/cli?status.png)](https://godoc.org/github.com/gocommons/cli)
+# GoCommons CLI [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gocommons/cli/master/LICENSE) [![Build Status](https://travis-ci.org/gocommons/cli.svg?branch=master)](https://travis-ci.org/gocommons/cli) [![Coverage Status](https://coveralls.io/repos/github/gocommons/cli/badge.svg?branch=master)](https://coveralls.io/github/gocommons/cli?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/gocommons/cli)](https://goreportcard.com/report/github.com/gocommons/cli) [![GoDoc](https://godoc.org/github.com/gocommons/cli?status.png)](https://godoc.org/github.com/gocommons/cli)
 
 GoCommons CLI is a golang library to implement command line applications. This is useful if your application requires to support multiple subcommands.  
+
+Website: [https://gocommons.github.io/cli/](https://gocommons.github.io/cli/)

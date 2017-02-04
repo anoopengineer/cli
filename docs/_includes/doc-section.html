@@ -1,0 +1,19 @@
+<div class="docs-header">
+<div class="container">
+  <div class="row text-capitalize">
+    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+  </div>
+</div>
+</div>
+
+<div class="container docs-content">
+  <div class="row ">
+      <div class="col-sm-3">
+          {% include sidebar.html %}
+      </div>
+      <div class="col-sm-9">
+            {{ content }}
+      </div> <!--col-sm-7 -->
+  </div>
+</div>
+
