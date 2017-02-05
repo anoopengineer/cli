@@ -2,8 +2,8 @@
 title: GoCommons CLI - An advanced Golang library to implement command line apps with multiple subcommand support and built in REPL terminal
 email: anoopengineer@gmail.com
 description: A Go library to implement simple to complex command line applications with multiple subcommand support, REPL terminal, multiple colors, theme support etc
-baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "https://gocommons.github.io/cli/" # the base hostname & protocol for your site
+baseurl: "/cli/" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://gocommons.github.io" # the base hostname & protocol for your site
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 2973388149
